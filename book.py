@@ -14,9 +14,10 @@ class Book:
           items.issued="1"
         elif(items.issued=="1"):
           print("The book has already been issued. ")
-      else:
+        else:
           print("Invalid IBAN Number")
-  def return_book():
+  
+  def return_book(book_objects):
     ib = input("Enter Iban Number of book you want to return: ")
     for items in book_objects:
       if(items.iban==ib):
@@ -25,15 +26,5 @@ class Book:
         elif(items.issued=="1"):
           print("The book has been returned")
           items.issued="0"
-      else:
+        else:
           print("Invalid IBAN Number")
-def add_book(book_objects):
-  ib = input("Enter Iban Number : ")
-  nme = input("Enter Book Name : ")
-  auth = input("Enter Author's Name :")
-  obj=Book(ib,nme,auth,"0")
-  book_objects.append(obj)
-  
-# def search_book():
-# def show_book():
-
