@@ -60,7 +60,7 @@ def show_book(book_objects):
 
 def main():
     flag = True
-    while flag:
+    while flag!=False:
         print("Select Any Number From the Following:\n")
         choice = input("1. Add a book.\n2. Search a book.\n3. Show all books present in the library.\n4. Issue a book.\n5. Return a book.\n6. Exit\nEnter your choice: ")
         if choice == "1":
